@@ -1,0 +1,50 @@
+
+.headi{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: white;
+}
+.background{
+    height: 800px;
+    width: 100%;
+    background: linear-gradient(rgb(2, 1, 7),rgb(10, 31, 101));
+}
+/* .home{
+    font-size: 16px;
+    margin: 0px 20px;
+}
+.home:hover{
+    border-bottom: solid black ;
+    transition: 0.1s ease-in;
+
+} */
+/* Add this style to the element you want to have the smooth underline effect */
+.home {
+    font-size: 16px;
+    margin: 0px 20px;
+    position: relative;
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Set your desired text color */
+  
+    /* Add a pseudo-element for the underline */
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px; /* Adjust the underline height */
+      background-color: #011222; /* Set your desired underline color */
+      transition: width 0.3s ease; /* Adjust the transition duration and timing function */
+    }
+  
+    /* Hover state */
+    &:hover::before {
+      color: #011222;
+      width: 100%; /* Expand the underline on hover */
+    }
+  }
+  
